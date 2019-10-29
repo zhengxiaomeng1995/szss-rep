@@ -19,10 +19,14 @@
 
               <el-menu-item index="1-1">零食</el-menu-item>
             </router-link>
-            <el-menu-item index="1-2">服装</el-menu-item>
+            <router-link to="fz">
+              <el-menu-item index="1-2">服装</el-menu-item>
+            </router-link>
           </el-menu-item-group>
           <el-menu-item-group title="分组2">
-            <el-menu-item index="1-3">鞋子</el-menu-item>
+            <router-link to="xiezi">
+              <el-menu-item index="1-3">鞋子</el-menu-item>
+            </router-link>
           </el-menu-item-group>
           <el-submenu index="1-4">
             <template slot="title">电子产品</template>
@@ -83,7 +87,7 @@
                 <Avatar class="zc"
                         src="https://i.loli.net/2017/08/21/599a521472424.jpg" />
                 <Avatar class="zc"
-                        style="color: #f56a00;background-color: #fde3cf">注册</Avatar>
+                        style="color: #f56a00;background-color: #fde3cf;">注册</Avatar>
                 <template>
                   <Dropdown>
                     <a href="javascript:void(0)">
@@ -91,11 +95,15 @@
                       <Icon type="ios-arrow-down"></Icon>
                     </a>
                     <DropdownMenu slot="list">
-                      <DropdownItem>上传头像</DropdownItem>
+                      <router-link to="zhaopian">
+                        <DropdownItem>上传头像</DropdownItem>
+                      </router-link>
                       <router-link to="xgzl">
                         <DropdownItem>修改资料</DropdownItem>
                       </router-link>
-                      <DropdownItem>修改密码</DropdownItem>
+                      <router-link to="mima">
+                        <DropdownItem>修改密码</DropdownItem>
+                      </router-link>
                       <Dropdown placement="right-start">
                         <DropdownItem>
                           个人订单
@@ -158,6 +166,11 @@ export default {
 
 <style>
 .el-header,
+.zc {
+  position: absolute;
+  top: 15px;
+  margin-right: 20px;
+}
 .el-footer {
   background-color: #b3c0d1;
   color: #333;

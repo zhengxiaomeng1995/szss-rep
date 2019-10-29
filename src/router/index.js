@@ -5,6 +5,10 @@ import dizhi from '@/components/dizhi'
 import lx from '@/components/lx'
 import zh from '@/components/zh'
 import xgzl from '@/components/xgzl'
+import fz from '@/components/fz'
+import zhaopian from '@/components/zhaopian'
+import mima from '@/components/mima'
+import xiezi from '@/components/xiezi'
 
 Vue.use(VueRouter)
 
@@ -28,6 +32,22 @@ export default new VueRouter({
         {
             path: '/xgzl',
             component: xgzl, //当访问这个路径'/second'时，访问的组件就是second,也就是SecondPage.vue
+        },
+        {
+            path: '/fz',
+            component: fz, //当访问这个路径'/second'时，访问的组件就是second,也就是SecondPage.vue
+        },
+        {
+            path: '/zhaopian',
+            component: zhaopian,
+        },
+        {
+            path: '/mima',
+            component: mima,
+        },
+        {
+            path: '/xiezi',
+            component: xiezi,
         },
     ]
 })
